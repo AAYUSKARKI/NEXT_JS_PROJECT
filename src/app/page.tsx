@@ -1,10 +1,18 @@
+import Card from "@/components/card"
+import Navbar from "@/components/navbar"
+import Cards from "@/components/cards"
+import Footers from "@/components/footers"
 export default function Home (){
   return(
 <>  
-<div className="flex h-screen justify-center items-center bg-slate-200">
-<h1 className="text-3xl text-center text-black ">WELCOME TO THE BLOG APP BY AAYUS KARKI</h1>
-<button className="btn btn-primary">Hello daisyUI!</button>
+<Navbar/>
+<Card/>
+<div className="grid px-8 mt-4 bg-slate-500 grid-cols-2 gap-4">
+<Cards/><Cards/><Cards/>
+<Cards/><Cards/><Cards/>
 </div>
+<Footers/>
+
 </>
   )
 }
